@@ -35,16 +35,9 @@ class SmartMeterService:
 
         if energy_available:
             print("Energy Allocated")
-            return True
 
         else:
             raise Exception("Energy Allocation Failed")
-
-
-class NotificationService:
-
-    def send_notification(self, message):
-        print("Notification:", message)
 
 
 # Create Services
@@ -53,8 +46,6 @@ marketplace = MarketplaceService()
 settlement = SettlementService()
 
 meter = SmartMeterService()
-
-notification = NotificationService()
 
 
 try:
@@ -71,11 +62,6 @@ try:
     # Step 4
     marketplace.confirm_trade()
 
-    # Step 5
-    notification.send_notification(
-        "Trade Confirmed Successfully"
-    )
-
 except:
 
     print("Compensation Transaction Started")
@@ -83,10 +69,6 @@ except:
     settlement.release_funds()
 
     marketplace.cancel_trade()
-
-    notification.send_notification(
-        "Trade Cancelled and Funds Released"
-    )
     
 
   # Ouput 
