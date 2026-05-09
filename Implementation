@@ -1,6 +1,0 @@
-# The functional requirements of EcoGrid Energy system are:
-
-1. Marketplace service creates trade request.
-2. Settlement Service reserves customer funds.
-3. Allocate enough energy using SmartMeter service.
-4. Send notifications to the users.
