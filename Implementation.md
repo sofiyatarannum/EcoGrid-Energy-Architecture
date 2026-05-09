@@ -90,4 +90,6 @@ except:
     
 
   # Ouput 
+
+  ![Output](EcoGrid Output.png)
     
