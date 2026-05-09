@@ -91,5 +91,5 @@ except:
 
   # Ouput 
 
-  ![Output](EcoGrid Output.png)
+  ![Output](EcoGrid.png)
     
